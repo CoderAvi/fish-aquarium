@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background: url('underwater.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-size: cover;
+}
+
+.fish-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.fish-container img{
+    height: 100px;
+    position: absolute;
+}
+
+.fish1{
+    top: 33%;
+    left: -10%;
+    transform: translateY(-50%);
+    animation: fishAnimation 12s linear infinite;
+}
+
+.fish2{
+    top: 66%;
+    left: -10%;
+    transform: translateY(-50%);
+    animation: fishAnimation 12s linear infinite 5s;
+}
+.fish3{
+    left: -30%;
+    top: 110%;
+   animation: fishAnimation2 16s linear infinite 3s;
+}
+
+.smallFish{
+    position: absolute;
+    height: 65px !important;
+    top: 3%;
+    left: -10%;
+    opacity: 0.75;
+    animation: fishAnimation 15s linear infinite 3s;
+}
+
+@keyframes fishAnimation {
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 150%;
+    }
+}
+
+@keyframes fishAnimation2{
+    0%{
+        left: -30%;
+        top: 110%;
+    }
+    100%{
+        left: 110%;
+        top: -30%;
+    }
+}
+
+.bubble-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.bubble-container img{
+    height: 40px;
+    position: absolute;
+    top: 140%;
+    transform: translateX(-50%);
+}
+
+.bubble1{
+    left: 16%;
+    animation: bubbleAnim 7s linear infinite 2s;
+}
+.bubble2{
+    left: 48%;
+    animation: bubbleAnim 7s linear infinite 8s;
+}
+.bubble3{
+    left: 80%;
+    animation: bubbleAnim 7s linear infinite 5s;
+}
+
+@keyframes bubbleAnim{
+    0%{
+       top: 140%;
+    }
+    75%{
+      opacity: 1;
+    }
+    100%{
+       top: 20%;
+       opacity: 0;
+    }
+}
