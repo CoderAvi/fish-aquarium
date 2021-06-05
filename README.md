@@ -5,7 +5,7 @@ this animation is done using css and whole code is written in html and css.if yo
 Hope you enjoyed this animation.
                       
                                         
-                                                                                                                  ~Avinash kumar
+                                                               ~Avinash kumar
 
 
 
