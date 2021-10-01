@@ -85,6 +85,7 @@
     position: absolute;
     top: 140%;
     transform: translateX(-50%);
+    border: 1px solid white;
 }
 
 .bubble1{
